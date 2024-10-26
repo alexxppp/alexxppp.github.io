@@ -45,11 +45,14 @@ body {
     font-size: 1.2rem;
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    padding: 0.4rem;
 }
 
 .custom-nav-link:hover {
     color: black;
+}
+
+.nav-item {
+    padding: 0.4rem;
 }
 
 .section-title {
