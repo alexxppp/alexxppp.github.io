@@ -78,13 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     languageButtons.forEach(button => {
         button.addEventListener('click', function () {
-            // Remover clase activa de otros botones
-            languageButtons.forEach(btn => btn.classList.remove('active'));
             
-            // Agregar clase activa al botón seleccionado
+            languageButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
     
-            // Cambiar el contenido del bloque de código y el color
             const selectedLang = button.getAttribute('data-lang');
             codeBlock.innerHTML = languages[selectedLang].code;
             codeBlock.style.color = languages[selectedLang].color;
